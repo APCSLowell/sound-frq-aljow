@@ -20,9 +20,9 @@ public class Sound
       if (samples[i] > limit) {
         count++;
         samples[i] = limit; 
-      } else if (samples[i] < -limit) {
+      } else if (samples[i] < limit*-1) {
         count++;
-        samples[i] = -limit;
+        samples[i] = -1*limit;
       }
     }
     return count;
