@@ -41,9 +41,10 @@ public class Sound
     while(samples[num] == 0) {
       num++;
     }
-    int [] arr = new int[samples.length-num];
+    int [] arr = new int[samples.length-num]; 
     for (int i= 0; i < arr.length; i++) {
       arr[i] = samples[num+1+i];
     }
   }
+  samples = arr;
 }
